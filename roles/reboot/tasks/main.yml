@@ -19,6 +19,3 @@
       connect_timeout=15
   become: false
   when: reboot == "yes"
-
-- debug:
-    msg: "We're back again. Running on {{ inventory_hostname }}"
