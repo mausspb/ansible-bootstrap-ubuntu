@@ -1,6 +1,6 @@
 ---
 - name: Bootstrap Ubuntu servers
-  hosts: server
+  hosts: srv
   become: yes
   roles:
     - bootstrap

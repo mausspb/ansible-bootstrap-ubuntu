@@ -1,3 +1,4 @@
-group_vars/server.yml
+group_vars/srv
 hosts
 *.retry
+.idea

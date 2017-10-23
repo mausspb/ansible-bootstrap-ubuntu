@@ -1,0 +1,3 @@
+---
+hostname: 'srv_name'
+port: '22'

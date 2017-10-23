@@ -1,7 +1,6 @@
 ---
 - name: Reboot server
-  hosts: server
-  become: yes
+  hosts: srv
   roles:
     - reboot
 

@@ -1,2 +1,2 @@
-[server]
-127.0.0.1
+[srv]
+you_server_name.test ansible_ssh_host=you_srv_ip ansible_ssh_user=you_remote_user_name ansible_ssh_private_key_file=group_vars/ansible
