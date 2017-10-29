@@ -3,7 +3,7 @@
   action: apt pkg=fail2ban state=installed
 
 - name: copy fail2ban local config
-  template: src=secure/jail.local dest=/etc/fail2ban/jail.local state=absent
+  template: src=secure/jail.local dest=/etc/fail2ban/jail.local
   notify: restart fail2ban
 
 - name: Disallow password authentication
