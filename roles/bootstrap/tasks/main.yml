@@ -1,7 +1,7 @@
 ---
-- include: hostname.yml
-- include: apt.yml
-- include: secure.yml
-- include: packages.yml
-- include: locale.yml  
-
+- import_tasks: hostname.yml
+- import_tasks: fix_apt.yml
+- import_tasks: apt.yml
+- import_tasks: secure.yml
+- import_tasks: packages.yml
+#- import_tasks: locale.yml

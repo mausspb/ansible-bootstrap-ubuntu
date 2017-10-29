@@ -1,4 +1,3 @@
 ---
 - name: Set hostname
-  action: shell hostnamectl set-hostname {{ hostname }}
-                  
+  action: shell hostnamectl set-hostname {{ inventory_hostname }}

@@ -2,6 +2,10 @@
 - name: Install fail2ban
   action: apt pkg=fail2ban state=installed
 
+- name: copy fail2ban local config
+  template: src=secure/jail.local dest=/etc/fail2ban/jail.local state=absent
+  notify: restart fail2ban
+
 - name: Disallow password authentication
   action: lineinfile dest=/etc/ssh/sshd_config regexp="^PasswordAuthentication" line="PasswordAuthentication no" state=present
   notify: restart ssh
